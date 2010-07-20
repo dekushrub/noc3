@@ -1,16 +1,4 @@
 <h1>Editing owner</h1>
-
-<% form_for(@owner) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
+<%= render :partial => 'form' %>
 <%= link_to 'Show', @owner %> |
 <%= link_to 'Back', owners_path %>

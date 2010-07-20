@@ -1,0 +1,34 @@
+div#container, div.container { position: relative; width: 58.75em; margin: 0 auto; padding: 0; }
+
+.row { margin: 0 0 1.5em 0; }
+.column { float: left; display: inline; margin: 0 0.625em; }
+
+.width-1 { width: 3.646em; }
+.width-2 { width: 8.542em; }
+.width-3 { width: 13.438em; }
+.width-4 { width: 18.333em; }
+.width-5 { width: 23.229em; }
+.width-6 { width: 28.125em; }
+.width-7 { width: 33.021em; }
+.width-8 { width: 37.917em; }
+.width-9 { width: 42.812em; }
+.width-10 { width: 47.708em; }
+.width-11 { width: 52.604em; }
+.width-12 { width: 57.500em; }
+
+.offset-1 { margin-left: 5.0em; }
+.offset-2 { margin-left: 10.0em; }
+.offset-3 { margin-left: 15.0em; }
+.offset-4 { margin-left: 20.0em; }
+.offset-5 { margin-left: 25.0em; }
+.offset-6 { margin-left: 30.0em; }
+.offset-7 { margin-left: 35.0em; }
+.offset-8 { margin-left: 40.0em; }
+.offset-9 { margin-left: 45.0em; }
+.offset-10 { margin-left: 50.0em; }
+.offset-11 { margin-left: 55.0em; }
+
+.column:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.row, .clearfix { display: inline-block; }
+.row, .clearfix { display: block; }
+

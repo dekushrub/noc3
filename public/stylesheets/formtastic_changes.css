@@ -12,3 +12,16 @@ The following style may be *conditionally* included for improved support on olde
 form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
 
 --------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset > ol > li { margin-bottom: 0; display: block;}
+form.formtastic fieldset > ol > li label { display:inline-block; width:100%; padding-top: 0; }
+form.formtastic fieldset > ol > li > li label { line-height:1.5em; padding-top:0; }
+form.formtastic fieldset > ol > li > li label input { line-height:1.5em; vertical-align:inherit; margin-top:-0.1em;}
+form.formtastic fieldset > ol > li.boolean label { display: inline-block; padding-top: 0;}
+form.formtastic fieldset > ol > li.boolean label input { margin-right:0.5em;}
+form.formtastic fieldset.buttons { padding-left:0; display: block; }
+form.formtastic fieldset > ol > li.string input { max-width: 20em; }
+form.formtastic fieldset > ol > li.password input { max-width: 20em; }
+form.formtastic fieldset > ol > li.numeric input { max-width: 20em; }
+form.formtastic .error { background-color: #fafafa; color: #729fcf }
+form.formtastic fieldset > ol > li p.inline-errors { color:#729fcf; margin:0; }
+form.formtastic fieldset > ol > li ul.errors { color:#729fcf; margin:0; }
