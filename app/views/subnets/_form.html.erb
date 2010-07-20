@@ -1,5 +1,11 @@
+<% semantic_form_for @subnet do |f| %>
 <% f.inputs do %>
   <%= f.input :description, :label => 'Description' %>
   <%= f.input :base, :label => 'Base' %>
   <%= f.input :mask, :label => 'Mask' %>
+  <%= f.input :vlan_id, :label => 'VLAN', :collection => Vlan.all %>
+<% end %>
+<% f.buttons do %>
+  <%= f.commit_button %>
+<% end %>
 <% end %>

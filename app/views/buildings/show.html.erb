@@ -26,7 +26,7 @@
   <%=h @building.zip %>
 </p>
 <% if @building.telecom_rooms.length != 0 %>
-<h4>Telecom Rooms:</h4>
+<b>Telecom Rooms:</b>
 <ul>
 <% @building.telecom_rooms.each do |tr| %>
   <li><%= link_to tr, tr %></li>

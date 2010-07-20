@@ -13,7 +13,7 @@
     <td><%=h subnet.description %></td>
     <td><%=h subnet.base %></td>
     <td><%=h subnet.mask %></td>
-    <td><%=h subnet.vlan_id %></td>
+    <td><%= link_to subnet.vlan, subnet.vlan %></td>
     <td><%= link_to 'Show', subnet %></td>
     <td><%= link_to 'Edit', edit_subnet_path(subnet) %></td>
     <td><%= link_to 'Destroy', subnet, :confirm => 'Are you sure?', :method => :delete %></td>

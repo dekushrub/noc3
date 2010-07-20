@@ -13,7 +13,7 @@
   <%=h @vlan.number %>
 </p>
 <% if @vlan.subnets.length != 0 %>
-<h4>Subnets:</h4>
+<b>Subnets:</b>
 <ul>
 <% @vlan.subnets.each do |subnet| %>
   <li><%= link_to subnet, subnet %></li>
