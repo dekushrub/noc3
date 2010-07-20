@@ -1,0 +1,19 @@
+<% semantic_form_for @device do |f| %>
+<% f.inputs do %>
+  <%= f.input :serial_number, :label => 'Serial number' %>
+  <%= f.input :asset_number, :label => 'Asset number' %>
+  <%= f.input :manufacturer, :label => 'Manufacturer' %>
+  <%= f.input :spare, :label => 'Spare' %>
+  <%= f.input :on_maintenance, :label => 'On maintenance' %>
+  <%= f.input :purchase_date, :label => 'Purchase date' %>
+  <%= f.input :received_date, :label => 'Received date' %>
+  <%= f.input :life_cycle, :label => 'Life cycle' %>
+  <%= f.input :end_of_life, :label => 'End of life' %>
+  <%= f.input :owner_id, :label => 'Owner', :collection => Owner.all %>
+  <%= f.input :telecom_room_id, :label => 'Telecom Room', :collection => TelecomRoom.all %>
+  <%= f.input :equipment_type_id, :label => 'Equipment Type', :collection => EquipmentType.all %>
+<% end %>
+<% f.buttons do %>
+  <%= f.commit_button %>
+<% end %>
+<% end %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720132114) do
+ActiveRecord::Schema.define(:version => 20100720155734) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100720132114) do
     t.string   "zip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nick"
   end
 
   create_table "devices", :force => true do |t|
@@ -32,10 +33,11 @@ ActiveRecord::Schema.define(:version => 20100720132114) do
     t.boolean  "on_maintenance"
     t.date     "purchase_date"
     t.date     "received_date"
-    t.time     "life_cyle"
+    t.integer  "life_cycle"
     t.date     "end_of_life"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   create_table "equipment_types", :force => true do |t|

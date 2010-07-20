@@ -1,8 +1,9 @@
-<h1>Listing buildings</h1>
+<h1>Listing Buildings</h1>
 
 <table>
   <tr>
     <th>Name</th>
+    <th>Nick</th>
     <th>Address</th>
     <th>City</th>
     <th>State</th>
@@ -12,6 +13,7 @@
 <% @buildings.each do |building| %>
   <tr>
     <td><%=h building.name %></td>
+    <td><%=h building.nick %></td>
     <td><%=h building.address %></td>
     <td><%=h building.city %></td>
     <td><%=h building.state %></td>
@@ -25,4 +27,4 @@
 
 <br />
 
-<%= link_to 'New building', new_building_path %>
+<%= link_to 'New Building', new_building_path %>

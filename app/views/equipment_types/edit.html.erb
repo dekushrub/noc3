@@ -1,16 +1,4 @@
-<h1>Editing equipment_type</h1>
-
-<% form_for(@equipment_type) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
+<h1>Editing Equipment Type</h1>
+<%= render :partial => 'form' %>
 <%= link_to 'Show', @equipment_type %> |
 <%= link_to 'Back', equipment_types_path %>

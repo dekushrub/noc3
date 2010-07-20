@@ -1,4 +1,4 @@
-<h1>Listing telecom_rooms</h1>
+<h1>Listing Telecom Rooms</h1>
 
 <table>
   <tr>
@@ -11,7 +11,7 @@
   <tr>
     <td><%=h telecom_room.floor %></td>
     <td><%=h telecom_room.room %></td>
-    <td><%=h telecom_room.building_id %></td>
+    <td><%= link_to telecom_room.building.name, telecom_room.building %></td>
     <td><%= link_to 'Show', telecom_room %></td>
     <td><%= link_to 'Edit', edit_telecom_room_path(telecom_room) %></td>
     <td><%= link_to 'Destroy', telecom_room, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -21,4 +21,4 @@
 
 <br />
 
-<%= link_to 'New telecom_room', new_telecom_room_path %>
+<%= link_to 'New Telecom Room', new_telecom_room_path %>
