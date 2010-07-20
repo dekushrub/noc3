@@ -1,0 +1,40 @@
+<h1>Listing cabinets</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Building</th>
+    <th>Room</th>
+    <th>Service type</th>
+    <th>Owner</th>
+    <th>Contact first name</th>
+    <th>Contact last name</th>
+    <th>Contact phone number</th>
+    <th>Status</th>
+    <th>Leased</th>
+    <th>Description</th>
+  </tr>
+
+<% @cabinets.each do |cabinet| %>
+  <tr>
+    <td><%=h cabinet.label %></td>
+    <td><%=h cabinet.building_id %></td>
+    <td><%=h cabinet.room %></td>
+    <td><%=h cabinet.service_type_id %></td>
+    <td><%=h cabinet.owner_id %></td>
+    <td><%=h cabinet.contact_first_name %></td>
+    <td><%=h cabinet.contact_last_name %></td>
+    <td><%=h cabinet.contact_phone_number %></td>
+    <td><%=h cabinet.status %></td>
+    <td><%=h cabinet.leased %></td>
+    <td><%=h cabinet.description %></td>
+    <td><%= link_to 'Show', cabinet %></td>
+    <td><%= link_to 'Edit', edit_cabinet_path(cabinet) %></td>
+    <td><%= link_to 'Destroy', cabinet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cabinet', new_cabinet_path %>

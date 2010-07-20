@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720170307) do
+ActiveRecord::Schema.define(:version => 20100720194410) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,22 @@ ActiveRecord::Schema.define(:version => 20100720170307) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "nick"
+  end
+
+  create_table "cabinets", :force => true do |t|
+    t.string   "label"
+    t.integer  "building_id"
+    t.string   "room"
+    t.integer  "service_type_id"
+    t.integer  "owner_id"
+    t.string   "contact_first_name"
+    t.string   "contact_last_name"
+    t.string   "contact_phone_number"
+    t.string   "status"
+    t.boolean  "leased"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "devices", :force => true do |t|
@@ -50,6 +66,15 @@ ActiveRecord::Schema.define(:version => 20100720170307) do
 
   create_table "equipment_types", :force => true do |t|
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ip_addresses", :force => true do |t|
+    t.string   "ip_address"
+    t.integer  "subnet_id"
+    t.integer  "network_id"
+    t.string   "network_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

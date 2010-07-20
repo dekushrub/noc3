@@ -2,27 +2,23 @@
 
 <table>
   <tr>
-    <th>Owner</th>
+    <th>Name</th>
     <th>Equipment Type</th>
     <th>Telecom Room</th>
     <th>Serial number</th>
     <th>Asset number</th>
     <th>Manufacturer</th>
-    <th>Spare</th>
-    <th>On maintenance</th>
     <th>End of life</th>
   </tr>
 
 <% @devices.each do |device| %>
   <tr>
-    <td><%= link_to device.owner, device.owner %></td>
+    <td><%=h device.name %></td>
     <td><%= link_to device.equipment_type, device.equipment_type %></td>
     <td><%= link_to device.telecom_room, device.telecom_room %></td>
     <td><%=h device.serial_number %></td>
     <td><%=h device.asset_number %></td>
     <td><%=h device.manufacturer %></td>
-    <td><%=h device.spare %></td>
-    <td><%=h device.on_maintenance %></td>
     <td><%=h device.end_of_life %></td>
     <td><%= link_to 'Show', device %></td>
     <td><%= link_to 'Edit', edit_device_path(device) %></td>

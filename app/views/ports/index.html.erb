@@ -1,4 +1,4 @@
-<h1>Listing ports</h1>
+<h1>Listing Ports</h1>
 
 <table>
   <tr>
@@ -23,7 +23,7 @@
     <td><%=h port.interface %></td>
     <td><%=h port.speed %></td>
     <td><%=h port.vlan_id %></td>
-    <td><%=h port.device_id %></td>
+    <td><%= link_to port.device, port.device %></td>
     <td><%= link_to 'Show', port %></td>
     <td><%= link_to 'Edit', edit_port_path(port) %></td>
     <td><%= link_to 'Destroy', port, :confirm => 'Are you sure?', :method => :delete %></td>

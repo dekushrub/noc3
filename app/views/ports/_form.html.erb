@@ -1,9 +1,15 @@
+<% semantic_form_for @port do |f| %> 
 <% f.inputs do %>
   <%= f.input :name, :label => 'Name' %>
-  <%= f.input :neighbor, :label => 'Neighbor' %>
+  <%= f.input :neighbor, :label => 'Neighbor', :collection => Port.all %>
   <%= f.input :idle_since, :label => 'Idle since' %>
   <%= f.input :mac, :label => 'Mac' %>
   <%= f.input :active, :label => 'Active' %>
   <%= f.input :interface, :label => 'Interface' %>
   <%= f.input :speed, :label => 'Speed' %>
+  <%= f.input :device_id, :label => 'Device', :collection => Device.all %>
+<% end %>
+<% f.buttons do %>
+  <%= f.commit_button %>
+<% end %>
 <% end %>

@@ -1,0 +1,24 @@
+<h1>Editing ip_address</h1>
+
+<% form_for(@ip_address) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :ip_address %><br />
+    <%= f.text_field :ip_address %>
+  </p>
+  <p>
+    <%= f.label :subnet_id %><br />
+    <%= f.text_field :subnet_id %>
+  </p>
+  <p>
+    <%= f.label :network_id %><br />
+    <%= f.text_field :network_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ip_address %> |
+<%= link_to 'Back', ip_addresses_path %>

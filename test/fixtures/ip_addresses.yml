@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ip_address: MyString
+  subnet_id: 1
+  network_id: 1
+
+two:
+  ip_address: MyString
+  subnet_id: 1
+  network_id: 1

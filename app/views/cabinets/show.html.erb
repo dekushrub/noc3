@@ -1,0 +1,58 @@
+<p>
+  <b>Label:</b>
+  <%=h @cabinet.label %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%=h @cabinet.building_id %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%=h @cabinet.room %>
+</p>
+
+<p>
+  <b>Service type:</b>
+  <%=h @cabinet.service_type_id %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%=h @cabinet.owner_id %>
+</p>
+
+<p>
+  <b>Contact first name:</b>
+  <%=h @cabinet.contact_first_name %>
+</p>
+
+<p>
+  <b>Contact last name:</b>
+  <%=h @cabinet.contact_last_name %>
+</p>
+
+<p>
+  <b>Contact phone number:</b>
+  <%=h @cabinet.contact_phone_number %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @cabinet.status %>
+</p>
+
+<p>
+  <b>Leased:</b>
+  <%=h @cabinet.leased %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @cabinet.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_cabinet_path(@cabinet) %> |
+<%= link_to 'Back', cabinets_path %>

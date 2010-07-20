@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  label: MyString
+  building_id: 1
+  room: MyString
+  service_type_id: 1
+  owner_id: 1
+  contact_first_name: MyString
+  contact_last_name: MyString
+  contact_phone_number: MyString
+  status: MyString
+  leased: false
+  description: MyString
+
+two:
+  label: MyString
+  building_id: 1
+  room: MyString
+  service_type_id: 1
+  owner_id: 1
+  contact_first_name: MyString
+  contact_last_name: MyString
+  contact_phone_number: MyString
+  status: MyString
+  leased: false
+  description: MyString

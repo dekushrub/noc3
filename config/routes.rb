@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :cabinets
+
+  map.resources :ip_addresses
+
   map.resources :ports
 
   map.resources :dhcp_scopes

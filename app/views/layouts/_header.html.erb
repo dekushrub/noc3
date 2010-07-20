@@ -4,14 +4,6 @@
       <div class="column width-12">
         <span id="title">Network Operations</span>
         <ul class="navigation round" id="navlist">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Doc", doc_path %></li>
-          <% if logged_in %>
-          <li><%= link_to "Settings", edit_account_path %></li>
-          <li><%= link_to "Log Out", logout_path %></li>
-          <% else %>
-          <li><%= link_to "Log In", login_path %></li>
-          <% end %>
         </ul>
       </div>
     </div>
