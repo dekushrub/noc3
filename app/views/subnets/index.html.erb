@@ -1,0 +1,26 @@
+<h1>Listing subnets</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Base</th>
+    <th>Mask</th>
+    <th>Vlan</th>
+  </tr>
+
+<% @subnets.each do |subnet| %>
+  <tr>
+    <td><%=h subnet.description %></td>
+    <td><%=h subnet.base %></td>
+    <td><%=h subnet.mask %></td>
+    <td><%=h subnet.vlan_id %></td>
+    <td><%= link_to 'Show', subnet %></td>
+    <td><%= link_to 'Edit', edit_subnet_path(subnet) %></td>
+    <td><%= link_to 'Destroy', subnet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subnet', new_subnet_path %>

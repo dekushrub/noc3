@@ -1,0 +1,24 @@
+<h1>Listing vlans</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Number</th>
+  </tr>
+
+<% @vlans.each do |vlan| %>
+  <tr>
+    <td><%=h vlan.name %></td>
+    <td><%=h vlan.description %></td>
+    <td><%=h vlan.number %></td>
+    <td><%= link_to 'Show', vlan %></td>
+    <td><%= link_to 'Edit', edit_vlan_path(vlan) %></td>
+    <td><%= link_to 'Destroy', vlan, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New vlan', new_vlan_path %>

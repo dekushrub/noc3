@@ -1,0 +1,23 @@
+<h1>New dhcp_scope</h1>
+
+<% form_for(@dhcp_scope) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dhcp_start %><br />
+    <%= f.text_field :dhcp_start %>
+  </p>
+  <p>
+    <%= f.label :dhcp_end %><br />
+    <%= f.text_field :dhcp_end %>
+  </p>
+  <p>
+    <%= f.label :subnet_id %><br />
+    <%= f.text_field :subnet_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', dhcp_scopes_path %>

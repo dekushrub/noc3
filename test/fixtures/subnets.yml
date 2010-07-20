@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  base: MyString
+  mask: MyString
+  vlan_id: 1
+
+two:
+  description: MyString
+  base: MyString
+  mask: MyString
+  vlan_id: 1

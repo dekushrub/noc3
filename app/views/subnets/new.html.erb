@@ -1,0 +1,27 @@
+<h1>New subnet</h1>
+
+<% form_for(@subnet) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :base %><br />
+    <%= f.text_field :base %>
+  </p>
+  <p>
+    <%= f.label :mask %><br />
+    <%= f.text_field :mask %>
+  </p>
+  <p>
+    <%= f.label :vlan_id %><br />
+    <%= f.text_field :vlan_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', subnets_path %>

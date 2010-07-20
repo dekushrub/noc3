@@ -1,0 +1,2 @@
+module DhcpScopesHelper
+end

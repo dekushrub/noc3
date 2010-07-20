@@ -1,0 +1,24 @@
+<h1>Listing dhcp_scopes</h1>
+
+<table>
+  <tr>
+    <th>Dhcp start</th>
+    <th>Dhcp end</th>
+    <th>Subnet</th>
+  </tr>
+
+<% @dhcp_scopes.each do |dhcp_scope| %>
+  <tr>
+    <td><%=h dhcp_scope.dhcp_start %></td>
+    <td><%=h dhcp_scope.dhcp_end %></td>
+    <td><%=h dhcp_scope.subnet_id %></td>
+    <td><%= link_to 'Show', dhcp_scope %></td>
+    <td><%= link_to 'Edit', edit_dhcp_scope_path(dhcp_scope) %></td>
+    <td><%= link_to 'Destroy', dhcp_scope, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dhcp_scope', new_dhcp_scope_path %>

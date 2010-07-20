@@ -1,0 +1,18 @@
+<p>
+  <b>Dhcp start:</b>
+  <%=h @dhcp_scope.dhcp_start %>
+</p>
+
+<p>
+  <b>Dhcp end:</b>
+  <%=h @dhcp_scope.dhcp_end %>
+</p>
+
+<p>
+  <b>Subnet:</b>
+  <%=h @dhcp_scope.subnet_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_dhcp_scope_path(@dhcp_scope) %> |
+<%= link_to 'Back', dhcp_scopes_path %>

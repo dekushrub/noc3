@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720155734) do
+ActiveRecord::Schema.define(:version => 20100720165911) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,14 @@ ActiveRecord::Schema.define(:version => 20100720155734) do
     t.string   "name"
   end
 
+  create_table "dhcp_scopes", :force => true do |t|
+    t.string   "dhcp_start"
+    t.string   "dhcp_end"
+    t.integer  "subnet_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "equipment_types", :force => true do |t|
     t.string   "description"
     t.datetime "created_at"
@@ -52,10 +60,27 @@ ActiveRecord::Schema.define(:version => 20100720155734) do
     t.datetime "updated_at"
   end
 
+  create_table "subnets", :force => true do |t|
+    t.string   "description"
+    t.string   "base"
+    t.string   "mask"
+    t.integer  "vlan_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "telecom_rooms", :force => true do |t|
     t.string   "floor"
     t.string   "room"
     t.integer  "building_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vlans", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

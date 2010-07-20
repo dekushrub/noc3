@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :dhcp_scopes
+
+  map.resources :subnets
+
+  map.resources :vlans
+
   map.resources :devices
 
   map.resources :telecom_rooms

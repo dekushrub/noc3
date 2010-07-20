@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dhcp_start: MyString
+  dhcp_end: MyString
+  subnet_id: 1
+
+two:
+  dhcp_start: MyString
+  dhcp_end: MyString
+  subnet_id: 1
