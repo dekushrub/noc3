@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :services
+
   map.resources :activity_types
 
   map.resources :connection_types

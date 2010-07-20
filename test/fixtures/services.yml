@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  descripton: MyString
+  fund_to_credit: MyString
+  billing_period: MyString
+
+two:
+  descripton: MyString
+  fund_to_credit: MyString
+  billing_period: MyString

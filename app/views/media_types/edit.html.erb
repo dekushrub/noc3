@@ -1,16 +1,4 @@
-<h1>Editing media_type</h1>
-
-<% form_for(@media_type) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
+<h1>Editing Media Type</h1>
+<%= render :partial => 'form' %>
 <%= link_to 'Show', @media_type %> |
 <%= link_to 'Back', media_types_path %>

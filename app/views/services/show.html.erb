@@ -1,0 +1,18 @@
+<p>
+  <b>Descripton:</b>
+  <%=h @service.descripton %>
+</p>
+
+<p>
+  <b>Fund to credit:</b>
+  <%=h @service.fund_to_credit %>
+</p>
+
+<p>
+  <b>Billing period:</b>
+  <%=h @service.billing_period %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
