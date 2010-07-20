@@ -1,0 +1,30 @@
+<h1>Listing materials</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Cost</th>
+    <th>Quantity in stock</th>
+    <th>Reorder quantiy</th>
+    <th>Manufacturer</th>
+    <th>Manufacturer part number</th>
+  </tr>
+
+<% @materials.each do |material| %>
+  <tr>
+    <td><%=h material.description %></td>
+    <td><%=h material.cost %></td>
+    <td><%=h material.quantity_in_stock %></td>
+    <td><%=h material.reorder_quantiy %></td>
+    <td><%=h material.manufacturer %></td>
+    <td><%=h material.manufacturer_part_number %></td>
+    <td><%= link_to 'Show', material %></td>
+    <td><%= link_to 'Edit', edit_material_path(material) %></td>
+    <td><%= link_to 'Destroy', material, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New material', new_material_path %>

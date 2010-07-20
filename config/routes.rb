@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :jobs
+
+  map.resources :job_statuses
+
+  map.resources :job_types
+
+  map.resources :job_materials
+
+  map.resources :materials
+
   map.resources :services
 
   map.resources :activity_types
@@ -36,6 +46,14 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :equipment_types
 
   map.resources :owners
+  
+  map.root :controller => 'static', :action => 'home'
+  map.doc '/doc', :controller => 'static', :action => 'doc'
+  map.resource :account, :controller => "users"
+  map.resources :users
+  map.resources :user_sessions
+  map.login 'login', :controller => 'user_sessions', :action => 'new'  
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

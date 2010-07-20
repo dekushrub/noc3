@@ -1,0 +1,88 @@
+<p>
+  <b>User:</b>
+  <%=h @job.user_id %>
+</p>
+
+<p>
+  <b>Billable:</b>
+  <%=h @job.billable %>
+</p>
+
+<p>
+  <b>Completion date:</b>
+  <%=h @job.completion_date %>
+</p>
+
+<p>
+  <b>Request date:</b>
+  <%=h @job.request_date %>
+</p>
+
+<p>
+  <b>Scheduled date:</b>
+  <%=h @job.scheduled_date %>
+</p>
+
+<p>
+  <b>Job status:</b>
+  <%=h @job.job_status_id %>
+</p>
+
+<p>
+  <b>Job type:</b>
+  <%=h @job.job_type_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @job.description %>
+</p>
+
+<p>
+  <b>Results:</b>
+  <%=h @job.results %>
+</p>
+
+<p>
+  <b>Service type:</b>
+  <%=h @job.service_type_id %>
+</p>
+
+<p>
+  <b>Contact first name:</b>
+  <%=h @job.contact_first_name %>
+</p>
+
+<p>
+  <b>Contact last name:</b>
+  <%=h @job.contact_last_name %>
+</p>
+
+<p>
+  <b>Contact phone number:</b>
+  <%=h @job.contact_phone_number %>
+</p>
+
+<p>
+  <b>Bill labor and materials:</b>
+  <%=h @job.bill_labor_and_materials %>
+</p>
+
+<p>
+  <b>Rush job:</b>
+  <%=h @job.rush_job %>
+</p>
+
+<p>
+  <b>Network:</b>
+  <%=h @job.network_id %>
+</p>
+
+<p>
+  <b>Network type:</b>
+  <%=h @job.network_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

@@ -1,0 +1,39 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  billable: false
+  completion_date: 2010-07-20
+  request_date: 2010-07-20
+  scheduled_date: 2010-07-20
+  job_status_id: 1
+  job_type_id: 1
+  description: MyString
+  results: MyString
+  service_type_id: 1
+  contact_first_name: MyString
+  contact_last_name: MyString
+  contact_phone_number: MyString
+  bill_labor_and_materials: false
+  rush_job: false
+  network_id: 1
+  network_type: MyString
+
+two:
+  user_id: 1
+  billable: false
+  completion_date: 2010-07-20
+  request_date: 2010-07-20
+  scheduled_date: 2010-07-20
+  job_status_id: 1
+  job_type_id: 1
+  description: MyString
+  results: MyString
+  service_type_id: 1
+  contact_first_name: MyString
+  contact_last_name: MyString
+  contact_phone_number: MyString
+  bill_labor_and_materials: false
+  rush_job: false
+  network_id: 1
+  network_type: MyString

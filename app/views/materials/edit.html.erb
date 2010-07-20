@@ -1,0 +1,36 @@
+<h1>Editing material</h1>
+
+<% form_for(@material) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </p>
+  <p>
+    <%= f.label :quantity_in_stock %><br />
+    <%= f.text_field :quantity_in_stock %>
+  </p>
+  <p>
+    <%= f.label :reorder_quantiy %><br />
+    <%= f.text_field :reorder_quantiy %>
+  </p>
+  <p>
+    <%= f.label :manufacturer %><br />
+    <%= f.text_field :manufacturer %>
+  </p>
+  <p>
+    <%= f.label :manufacturer_part_number %><br />
+    <%= f.text_field :manufacturer_part_number %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @material %> |
+<%= link_to 'Back', materials_path %>

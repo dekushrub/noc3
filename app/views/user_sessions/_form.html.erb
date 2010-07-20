@@ -1,0 +1,11 @@
+<% semantic_form_for @user_session do |f| %>
+  <% f.inputs do %>
+    <%= f.input :login, :label=> 'Login', :as => :string %>
+    <%= f.input :password, :label=> 'Password', :as => :password %>
+    <%= f.input :remember_me, :label=> 'Remember Me', :as => :boolean %>
+  <% end %>
+  <% f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>
+  

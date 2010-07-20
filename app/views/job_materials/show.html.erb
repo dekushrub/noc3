@@ -1,0 +1,18 @@
+<p>
+  <b>Job:</b>
+  <%=h @job_material.job_id %>
+</p>
+
+<p>
+  <b>Material:</b>
+  <%=h @job_material.material_id %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @job_material.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_material_path(@job_material) %> |
+<%= link_to 'Back', job_materials_path %>

@@ -1,0 +1,24 @@
+<h1>Editing job_material</h1>
+
+<% form_for(@job_material) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :job_id %><br />
+    <%= f.text_field :job_id %>
+  </p>
+  <p>
+    <%= f.label :material_id %><br />
+    <%= f.text_field :material_id %>
+  </p>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @job_material %> |
+<%= link_to 'Back', job_materials_path %>

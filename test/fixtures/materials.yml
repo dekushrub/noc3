@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  cost: 9.99
+  quantity_in_stock: 1
+  reorder_quantiy: 1
+  manufacturer: MyString
+  manufacturer_part_number: MyString
+
+two:
+  description: MyString
+  cost: 9.99
+  quantity_in_stock: 1
+  reorder_quantiy: 1
+  manufacturer: MyString
+  manufacturer_part_number: MyString

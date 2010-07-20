@@ -1,0 +1,2 @@
+module JobMaterialsHelper
+end

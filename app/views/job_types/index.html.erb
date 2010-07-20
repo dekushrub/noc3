@@ -1,0 +1,20 @@
+<h1>Listing job_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+
+<% @job_types.each do |job_type| %>
+  <tr>
+    <td><%=h job_type.description %></td>
+    <td><%= link_to 'Show', job_type %></td>
+    <td><%= link_to 'Edit', edit_job_type_path(job_type) %></td>
+    <td><%= link_to 'Destroy', job_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New job_type', new_job_type_path %>

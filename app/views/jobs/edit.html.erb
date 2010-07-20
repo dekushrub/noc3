@@ -1,0 +1,80 @@
+<h1>Editing job</h1>
+
+<% form_for(@job) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :billable %><br />
+    <%= f.check_box :billable %>
+  </p>
+  <p>
+    <%= f.label :completion_date %><br />
+    <%= f.date_select :completion_date %>
+  </p>
+  <p>
+    <%= f.label :request_date %><br />
+    <%= f.date_select :request_date %>
+  </p>
+  <p>
+    <%= f.label :scheduled_date %><br />
+    <%= f.date_select :scheduled_date %>
+  </p>
+  <p>
+    <%= f.label :job_status_id %><br />
+    <%= f.text_field :job_status_id %>
+  </p>
+  <p>
+    <%= f.label :job_type_id %><br />
+    <%= f.text_field :job_type_id %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :results %><br />
+    <%= f.text_field :results %>
+  </p>
+  <p>
+    <%= f.label :service_type_id %><br />
+    <%= f.text_field :service_type_id %>
+  </p>
+  <p>
+    <%= f.label :contact_first_name %><br />
+    <%= f.text_field :contact_first_name %>
+  </p>
+  <p>
+    <%= f.label :contact_last_name %><br />
+    <%= f.text_field :contact_last_name %>
+  </p>
+  <p>
+    <%= f.label :contact_phone_number %><br />
+    <%= f.text_field :contact_phone_number %>
+  </p>
+  <p>
+    <%= f.label :bill_labor_and_materials %><br />
+    <%= f.check_box :bill_labor_and_materials %>
+  </p>
+  <p>
+    <%= f.label :rush_job %><br />
+    <%= f.check_box :rush_job %>
+  </p>
+  <p>
+    <%= f.label :network_id %><br />
+    <%= f.text_field :network_id %>
+  </p>
+  <p>
+    <%= f.label :network_type %><br />
+    <%= f.text_field :network_type %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @job %> |
+<%= link_to 'Back', jobs_path %>

@@ -1,0 +1,16 @@
+<h1>Editing job_status</h1>
+
+<% form_for(@job_status) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @job_status %> |
+<%= link_to 'Back', job_statuses_path %>

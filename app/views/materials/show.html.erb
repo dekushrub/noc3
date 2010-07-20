@@ -1,0 +1,33 @@
+<p>
+  <b>Description:</b>
+  <%=h @material.description %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%=h @material.cost %>
+</p>
+
+<p>
+  <b>Quantity in stock:</b>
+  <%=h @material.quantity_in_stock %>
+</p>
+
+<p>
+  <b>Reorder quantiy:</b>
+  <%=h @material.reorder_quantiy %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%=h @material.manufacturer %>
+</p>
+
+<p>
+  <b>Manufacturer part number:</b>
+  <%=h @material.manufacturer_part_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_material_path(@material) %> |
+<%= link_to 'Back', materials_path %>

@@ -1,0 +1,52 @@
+<h1>Listing jobs</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Billable</th>
+    <th>Completion date</th>
+    <th>Request date</th>
+    <th>Scheduled date</th>
+    <th>Job status</th>
+    <th>Job type</th>
+    <th>Description</th>
+    <th>Results</th>
+    <th>Service type</th>
+    <th>Contact first name</th>
+    <th>Contact last name</th>
+    <th>Contact phone number</th>
+    <th>Bill labor and materials</th>
+    <th>Rush job</th>
+    <th>Network</th>
+    <th>Network type</th>
+  </tr>
+
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%=h job.user_id %></td>
+    <td><%=h job.billable %></td>
+    <td><%=h job.completion_date %></td>
+    <td><%=h job.request_date %></td>
+    <td><%=h job.scheduled_date %></td>
+    <td><%=h job.job_status_id %></td>
+    <td><%=h job.job_type_id %></td>
+    <td><%=h job.description %></td>
+    <td><%=h job.results %></td>
+    <td><%=h job.service_type_id %></td>
+    <td><%=h job.contact_first_name %></td>
+    <td><%=h job.contact_last_name %></td>
+    <td><%=h job.contact_phone_number %></td>
+    <td><%=h job.bill_labor_and_materials %></td>
+    <td><%=h job.rush_job %></td>
+    <td><%=h job.network_id %></td>
+    <td><%=h job.network_type %></td>
+    <td><%= link_to 'Show', job %></td>
+    <td><%= link_to 'Edit', edit_job_path(job) %></td>
+    <td><%= link_to 'Destroy', job, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New job', new_job_path %>

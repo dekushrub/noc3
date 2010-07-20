@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720231549) do
+ActiveRecord::Schema.define(:version => 20100720234512) do
 
   create_table "activity_types", :force => true do |t|
     t.string   "description"
@@ -93,8 +93,61 @@ ActiveRecord::Schema.define(:version => 20100720231549) do
     t.datetime "updated_at"
   end
 
+  create_table "job_materials", :force => true do |t|
+    t.integer  "job_id"
+    t.integer  "material_id"
+    t.integer  "quantity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "job_statuses", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "job_types", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jobs", :force => true do |t|
+    t.integer  "user_id"
+    t.boolean  "billable"
+    t.date     "completion_date"
+    t.date     "request_date"
+    t.date     "scheduled_date"
+    t.integer  "job_status_id"
+    t.integer  "job_type_id"
+    t.string   "description"
+    t.string   "results"
+    t.integer  "service_type_id"
+    t.string   "contact_first_name"
+    t.string   "contact_last_name"
+    t.string   "contact_phone_number"
+    t.boolean  "bill_labor_and_materials"
+    t.boolean  "rush_job"
+    t.integer  "network_id"
+    t.string   "network_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "line_types", :force => true do |t|
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "materials", :force => true do |t|
+    t.string   "description"
+    t.decimal  "cost"
+    t.integer  "quantity_in_stock"
+    t.integer  "reorder_quantiy"
+    t.string   "manufacturer"
+    t.string   "manufacturer_part_number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -146,6 +199,18 @@ ActiveRecord::Schema.define(:version => 20100720231549) do
     t.string   "floor"
     t.string   "room"
     t.integer  "building_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "login",                                :null => false
+    t.string   "email",                                :null => false
+    t.string   "crypted_password",                     :null => false
+    t.string   "password_salt",                        :null => false
+    t.string   "persistence_token",                    :null => false
+    t.string   "perishable_token",                     :null => false
+    t.boolean  "admin",             :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
