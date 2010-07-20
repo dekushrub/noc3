@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :buildings
+
   map.resources :equipment_types
 
   map.resources :owners
