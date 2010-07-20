@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720194410) do
+ActiveRecord::Schema.define(:version => 20100720195633) do
+
+  create_table "activity_types", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -34,6 +40,14 @@ ActiveRecord::Schema.define(:version => 20100720194410) do
     t.string   "status"
     t.boolean  "leased"
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "connection_types", :force => true do |t|
+    t.string   "description"
+    t.decimal  "charge"
+    t.string   "bill_description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -75,6 +89,18 @@ ActiveRecord::Schema.define(:version => 20100720194410) do
     t.integer  "subnet_id"
     t.integer  "network_id"
     t.string   "network_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "line_types", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "media_types", :force => true do |t|
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

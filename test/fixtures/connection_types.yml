@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  charge: 9.99
+  bill_description: MyString
+
+two:
+  description: MyString
+  charge: 9.99
+  bill_description: MyString

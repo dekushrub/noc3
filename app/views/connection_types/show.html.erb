@@ -1,0 +1,18 @@
+<p>
+  <b>Description:</b>
+  <%=h @connection_type.description %>
+</p>
+
+<p>
+  <b>Charge:</b>
+  <%=h @connection_type.charge %>
+</p>
+
+<p>
+  <b>Bill description:</b>
+  <%=h @connection_type.bill_description %>
+</p>
+
+
+<%= link_to 'Edit', edit_connection_type_path(@connection_type) %> |
+<%= link_to 'Back', connection_types_path %>

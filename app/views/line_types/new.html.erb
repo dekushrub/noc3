@@ -1,0 +1,15 @@
+<h1>New line_type</h1>
+
+<% form_for(@line_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', line_types_path %>

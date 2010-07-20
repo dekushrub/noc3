@@ -1,0 +1,24 @@
+<h1>Editing connection_type</h1>
+
+<% form_for(@connection_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :charge %><br />
+    <%= f.text_field :charge %>
+  </p>
+  <p>
+    <%= f.label :bill_description %><br />
+    <%= f.text_field :bill_description %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @connection_type %> |
+<%= link_to 'Back', connection_types_path %>

@@ -1,0 +1,20 @@
+<h1>Listing media_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+
+<% @media_types.each do |media_type| %>
+  <tr>
+    <td><%=h media_type.description %></td>
+    <td><%= link_to 'Show', media_type %></td>
+    <td><%= link_to 'Edit', edit_media_type_path(media_type) %></td>
+    <td><%= link_to 'Destroy', media_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New media_type', new_media_type_path %>

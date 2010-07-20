@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :activity_types
+
+  map.resources :connection_types
+
+  map.resources :media_types
+
+  map.resources :media_types
+
+  map.resources :line_types
+
   map.resources :cabinets
 
   map.resources :ip_addresses
