@@ -1,0 +1,2 @@
+module TelecomRoomsHelper
+end

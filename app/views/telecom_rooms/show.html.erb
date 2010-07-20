@@ -1,0 +1,18 @@
+<p>
+  <b>Floor:</b>
+  <%=h @telecom_room.floor %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%=h @telecom_room.room %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%=h @telecom_room.building_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_telecom_room_path(@telecom_room) %> |
+<%= link_to 'Back', telecom_rooms_path %>

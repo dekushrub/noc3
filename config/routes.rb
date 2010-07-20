@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :telecom_rooms
+
+  map.resources :telecom_rooms
+
+  map.resources :telecom_rooms
+
   map.resources :buildings
 
   map.resources :equipment_types
