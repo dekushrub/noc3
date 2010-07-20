@@ -1,9 +1,9 @@
-<h1>Listing dhcp_scopes</h1>
+<h1>Listing DHCP Scopes</h1>
 
 <table>
   <tr>
-    <th>Dhcp start</th>
-    <th>Dhcp end</th>
+    <th>DHCP start</th>
+    <th>DHCP end</th>
     <th>Subnet</th>
   </tr>
 
@@ -11,7 +11,7 @@
   <tr>
     <td><%=h dhcp_scope.dhcp_start %></td>
     <td><%=h dhcp_scope.dhcp_end %></td>
-    <td><%=h dhcp_scope.subnet_id %></td>
+    <td><%= link_to dhcp_scope.subnet, dhcp_scope.subnet %></td>
     <td><%= link_to 'Show', dhcp_scope %></td>
     <td><%= link_to 'Edit', edit_dhcp_scope_path(dhcp_scope) %></td>
     <td><%= link_to 'Destroy', dhcp_scope, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -21,4 +21,4 @@
 
 <br />
 
-<%= link_to 'New dhcp_scope', new_dhcp_scope_path %>
+<%= link_to 'New DHCP Scope', new_dhcp_scope_path %>
