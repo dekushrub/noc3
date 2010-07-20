@@ -2,14 +2,23 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>NOC</title>
+  <title></title>
   <%= render :partial => 'layouts/stylesheets' %>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="column width-12"><%= yield %></div>
+<%= render :partial => 'layouts/header' %>
+<%= render :partial => 'layouts/navbar' %>
+<div class="container round-bottom" id="content">
+<% flash.each do |key, value| %>
+  <div class="row flash">
+  <div class="column width-12"><span class="round <%= key %>"><%= value %></span></div>
   </div>
+<% end %> 
+<div class="row">
+  <div class="column width-12"><%= yield %></div>
 </div>
+
+</div>
+
 </body>
 </html>
