@@ -1,4 +1,10 @@
+<% semantic_form_for @dhcp_scope do |f| %>
 <% f.inputs do %>
-  <%= f.input :dhcp_start, :label => 'Dhcp start' %>
-  <%= f.input :dhcp_end, :label => 'Dhcp end' %>
+  <%= f.input :dhcp_start, :label => 'DHCP start' %>
+  <%= f.input :dhcp_end, :label => 'DHCP end' %>
+  <%= f.input :subnet_id, :label => 'Subnet', :collection => Subnet.all %>
+<% end %>
+<% f.buttons do %>
+  <%= f.commit_button %>
+<% end %>
 <% end %>

@@ -17,7 +17,14 @@
   <b>Vlan:</b>
   <%= link_to @subnet.vlan, @subnet.vlan %>
 </p>
-
+<% if @subnet.dhcp_scopes.length != 0 %>
+<b>DHCP Scopes:</b>
+<ul>
+<% @subnet.dhcp_scopes.each do |dhcp| %>
+  <li><%= link_to dhcp, dhcp %></li>
+<% end %>
+</ul>
+<% end %>
 
 <%= link_to 'Edit', edit_subnet_path(@subnet) %> |
 <%= link_to 'Back', subnets_path %>
