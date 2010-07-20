@@ -1,0 +1,48 @@
+<h1>Editing port</h1>
+
+<% form_for(@port) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :neighbor %><br />
+    <%= f.text_field :neighbor %>
+  </p>
+  <p>
+    <%= f.label :idle_since %><br />
+    <%= f.datetime_select :idle_since %>
+  </p>
+  <p>
+    <%= f.label :mac %><br />
+    <%= f.text_field :mac %>
+  </p>
+  <p>
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </p>
+  <p>
+    <%= f.label :interface %><br />
+    <%= f.text_field :interface %>
+  </p>
+  <p>
+    <%= f.label :speed %><br />
+    <%= f.text_field :speed %>
+  </p>
+  <p>
+    <%= f.label :vlan_id %><br />
+    <%= f.text_field :vlan_id %>
+  </p>
+  <p>
+    <%= f.label :device_id %><br />
+    <%= f.text_field :device_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @port %> |
+<%= link_to 'Back', ports_path %>

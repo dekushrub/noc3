@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  neighbor: 1
+  idle_since: 2010-07-20 12:03:07
+  mac: MyString
+  active: false
+  interface: MyString
+  speed: 1.5
+  vlan_id: 1
+  device_id: 1
+
+two:
+  name: MyString
+  neighbor: 1
+  idle_since: 2010-07-20 12:03:07
+  mac: MyString
+  active: false
+  interface: MyString
+  speed: 1.5
+  vlan_id: 1
+  device_id: 1

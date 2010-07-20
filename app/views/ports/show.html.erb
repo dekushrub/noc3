@@ -1,0 +1,48 @@
+<p>
+  <b>Name:</b>
+  <%=h @port.name %>
+</p>
+
+<p>
+  <b>Neighbor:</b>
+  <%=h @port.neighbor %>
+</p>
+
+<p>
+  <b>Idle since:</b>
+  <%=h @port.idle_since %>
+</p>
+
+<p>
+  <b>Mac:</b>
+  <%=h @port.mac %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%=h @port.active %>
+</p>
+
+<p>
+  <b>Interface:</b>
+  <%=h @port.interface %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%=h @port.speed %>
+</p>
+
+<p>
+  <b>Vlan:</b>
+  <%=h @port.vlan_id %>
+</p>
+
+<p>
+  <b>Device:</b>
+  <%=h @port.device_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_port_path(@port) %> |
+<%= link_to 'Back', ports_path %>

@@ -29,7 +29,7 @@
 <h4>Telecom Rooms:</h4>
 <ul>
 <% @building.telecom_rooms.each do |tr| %>
-  <li><%= link_to "#{tr.floor} - #{tr.room}", tr %></li>
+  <li><%= link_to tr, tr %></li>
 <% end %>
 </ul>
 <% end %>

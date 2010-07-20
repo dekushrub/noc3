@@ -1,0 +1,36 @@
+<h1>Listing ports</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Neighbor</th>
+    <th>Idle since</th>
+    <th>Mac</th>
+    <th>Active</th>
+    <th>Interface</th>
+    <th>Speed</th>
+    <th>Vlan</th>
+    <th>Device</th>
+  </tr>
+
+<% @ports.each do |port| %>
+  <tr>
+    <td><%=h port.name %></td>
+    <td><%=h port.neighbor %></td>
+    <td><%=h port.idle_since %></td>
+    <td><%=h port.mac %></td>
+    <td><%=h port.active %></td>
+    <td><%=h port.interface %></td>
+    <td><%=h port.speed %></td>
+    <td><%=h port.vlan_id %></td>
+    <td><%=h port.device_id %></td>
+    <td><%= link_to 'Show', port %></td>
+    <td><%= link_to 'Edit', edit_port_path(port) %></td>
+    <td><%= link_to 'Destroy', port, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New port', new_port_path %>
