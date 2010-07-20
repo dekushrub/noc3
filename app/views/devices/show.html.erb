@@ -1,0 +1,63 @@
+<p>
+  <b>Owner:</b>
+  <%=h @device.owner_id %>
+</p>
+
+<p>
+  <b>Equipment type:</b>
+  <%=h @device.equipment_type_id %>
+</p>
+
+<p>
+  <b>Telecom room:</b>
+  <%=h @device.telecom_room_id %>
+</p>
+
+<p>
+  <b>Serial number:</b>
+  <%=h @device.serial_number %>
+</p>
+
+<p>
+  <b>Asset number:</b>
+  <%=h @device.asset_number %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%=h @device.manufacturer %>
+</p>
+
+<p>
+  <b>Spare:</b>
+  <%=h @device.spare %>
+</p>
+
+<p>
+  <b>On maintenance:</b>
+  <%=h @device.on_maintenance %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%=h @device.purchase_date %>
+</p>
+
+<p>
+  <b>Received date:</b>
+  <%=h @device.received_date %>
+</p>
+
+<p>
+  <b>Life cyle:</b>
+  <%=h @device.life_cyle %>
+</p>
+
+<p>
+  <b>End of life:</b>
+  <%=h @device.end_of_life %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>

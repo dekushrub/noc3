@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720131749) do
+ActiveRecord::Schema.define(:version => 20100720132114) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -17,6 +17,23 @@ ActiveRecord::Schema.define(:version => 20100720131749) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "devices", :force => true do |t|
+    t.integer  "owner_id"
+    t.integer  "equipment_type_id"
+    t.integer  "telecom_room_id"
+    t.string   "serial_number"
+    t.string   "asset_number"
+    t.string   "manufacturer"
+    t.boolean  "spare"
+    t.boolean  "on_maintenance"
+    t.date     "purchase_date"
+    t.date     "received_date"
+    t.time     "life_cyle"
+    t.date     "end_of_life"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

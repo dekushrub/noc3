@@ -1,0 +1,60 @@
+<h1>Editing device</h1>
+
+<% form_for(@device) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :owner_id %><br />
+    <%= f.text_field :owner_id %>
+  </p>
+  <p>
+    <%= f.label :equipment_type_id %><br />
+    <%= f.text_field :equipment_type_id %>
+  </p>
+  <p>
+    <%= f.label :telecom_room_id %><br />
+    <%= f.text_field :telecom_room_id %>
+  </p>
+  <p>
+    <%= f.label :serial_number %><br />
+    <%= f.text_field :serial_number %>
+  </p>
+  <p>
+    <%= f.label :asset_number %><br />
+    <%= f.text_field :asset_number %>
+  </p>
+  <p>
+    <%= f.label :manufacturer %><br />
+    <%= f.text_field :manufacturer %>
+  </p>
+  <p>
+    <%= f.label :spare %><br />
+    <%= f.check_box :spare %>
+  </p>
+  <p>
+    <%= f.label :on_maintenance %><br />
+    <%= f.check_box :on_maintenance %>
+  </p>
+  <p>
+    <%= f.label :purchase_date %><br />
+    <%= f.date_select :purchase_date %>
+  </p>
+  <p>
+    <%= f.label :received_date %><br />
+    <%= f.date_select :received_date %>
+  </p>
+  <p>
+    <%= f.label :life_cyle %><br />
+    <%= f.time_select :life_cyle %>
+  </p>
+  <p>
+    <%= f.label :end_of_life %><br />
+    <%= f.date_select :end_of_life %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @device %> |
+<%= link_to 'Back', devices_path %>

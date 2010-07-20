@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  owner_id: 1
+  equipment_type_id: 1
+  telecom_room_id: 1
+  serial_number: MyString
+  asset_number: MyString
+  manufacturer: MyString
+  spare: false
+  on_maintenance: false
+  purchase_date: 2010-07-20
+  received_date: 2010-07-20
+  life_cyle: 2010-07-20 08:21:14
+  end_of_life: 2010-07-20
+
+two:
+  owner_id: 1
+  equipment_type_id: 1
+  telecom_room_id: 1
+  serial_number: MyString
+  asset_number: MyString
+  manufacturer: MyString
+  spare: false
+  on_maintenance: false
+  purchase_date: 2010-07-20
+  received_date: 2010-07-20
+  life_cyle: 2010-07-20 08:21:14
+  end_of_life: 2010-07-20

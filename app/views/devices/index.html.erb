@@ -1,0 +1,42 @@
+<h1>Listing devices</h1>
+
+<table>
+  <tr>
+    <th>Owner</th>
+    <th>Equipment type</th>
+    <th>Telecom room</th>
+    <th>Serial number</th>
+    <th>Asset number</th>
+    <th>Manufacturer</th>
+    <th>Spare</th>
+    <th>On maintenance</th>
+    <th>Purchase date</th>
+    <th>Received date</th>
+    <th>Life cyle</th>
+    <th>End of life</th>
+  </tr>
+
+<% @devices.each do |device| %>
+  <tr>
+    <td><%=h device.owner_id %></td>
+    <td><%=h device.equipment_type_id %></td>
+    <td><%=h device.telecom_room_id %></td>
+    <td><%=h device.serial_number %></td>
+    <td><%=h device.asset_number %></td>
+    <td><%=h device.manufacturer %></td>
+    <td><%=h device.spare %></td>
+    <td><%=h device.on_maintenance %></td>
+    <td><%=h device.purchase_date %></td>
+    <td><%=h device.received_date %></td>
+    <td><%=h device.life_cyle %></td>
+    <td><%=h device.end_of_life %></td>
+    <td><%= link_to 'Show', device %></td>
+    <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    <td><%= link_to 'Destroy', device, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New device', new_device_path %>

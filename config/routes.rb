@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :devices
+
   map.resources :telecom_rooms
 
   map.resources :telecom_rooms
