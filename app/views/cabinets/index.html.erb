@@ -1,11 +1,11 @@
-<h1>Listing cabinets</h1>
+<h1>Listing Cabinets</h1>
 
 <table>
   <tr>
     <th>Label</th>
     <th>Building</th>
     <th>Room</th>
-    <th>Service type</th>
+    <th>Service</th>
     <th>Owner</th>
     <th>Contact first name</th>
     <th>Contact last name</th>
@@ -18,9 +18,9 @@
 <% @cabinets.each do |cabinet| %>
   <tr>
     <td><%=h cabinet.label %></td>
-    <td><%=h cabinet.building_id %></td>
+    <td><%= link_to cabinet.building, cabinet.building %></td>
     <td><%=h cabinet.room %></td>
-    <td><%=h cabinet.service_type_id %></td>
+    <td><%= link_to cabinet.service, cabinet.service %></td>
     <td><%=h cabinet.owner_id %></td>
     <td><%=h cabinet.contact_first_name %></td>
     <td><%=h cabinet.contact_last_name %></td>
@@ -37,4 +37,4 @@
 
 <br />
 
-<%= link_to 'New cabinet', new_cabinet_path %>
+<%= link_to 'New Cabinet', new_cabinet_path %>

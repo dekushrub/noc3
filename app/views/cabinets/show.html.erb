@@ -5,7 +5,7 @@
 
 <p>
   <b>Building:</b>
-  <%=h @cabinet.building_id %>
+  <%= link_to @cabinet.building, @cabinet.building %>
 </p>
 
 <p>
@@ -14,8 +14,8 @@
 </p>
 
 <p>
-  <b>Service type:</b>
-  <%=h @cabinet.service_type_id %>
+  <b>Service:</b>
+  <%= link_to @cabinet.service %>
 </p>
 
 <p>
